@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book registry</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+	<main>
+		<!-- FORM SECTION -->
+		<form action="" class="book-form">
+			<h2>Register books</h2>
+			
+			<label for="title">Title:</label>
+			<input type="text" name="title" class="title" required>
+			
+			<label for="author">Author:</label>
+			<input type="text" name="author" class="author" required>
+			
+			<label for="isbn">Isbn:</label>
+			<input type="text" name="isbn" class="isbn" required>
+			
+			<label for="format">Format:</label>
+			<select name="format" class="format" required>
+				<option value="physical">Physical book</option>
+				<option value="audio">Audio book</option>
+			</select>
+
+			<label for="narrator">Narrator:</label>
+			<input type="text" name="narrator" class="narrator" required>
+
+			<button type="submit" class="submit-button">Register book</button>
+
+
+		</form>
+
+		<!-- DISPLAY BOOKS SECTION -->
+		<section class="book-list">
+			<div class="book-list__button-container">
+				<button class="render-physical-book-button">Display Physical Books</button>
+				<button class="render-audio-book-button">Display Audio Books</button>
+			</div>
+
+			<div class="display-books-container">
+				<div class="display-physical-books">
+					<header class="display-physical-books__header">
+						<span class="">Title</span>
+						<span class="">Author</span>
+						<span class="">Format</span>
+						<span class="">ISBN</span>
+						<span></span>
+					</header>
+
+					<ul class="physical-books-list"></ul>
+				</div>
+
+				<div class="display-audio-books">
+					<header class="display-audio-books__header">
+						<span class="">Title</span>
+						<span class="">Author</span>
+						<span class="">Format</span>
+						<span class="">Narrator</span>
+						<span></span>
+					</header>
+
+					<ul class="audio-books-list"></ul>
+				</div>
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>
