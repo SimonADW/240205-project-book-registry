@@ -43,7 +43,6 @@ button {
 	height: 2rem;
 	cursor: pointer;
 	border-radius: 5px;
-	margin-top: 1rem;
 	color: var(--color-primary);
 	padding: 0 0.5rem;
 }
@@ -90,10 +89,12 @@ button:active {
 }
 
 .display-physical-books__header, .display-audio-books__header {
-	background: var(--color-secondary);
 	height: 2.5rem;
+	font-weight: 600;
 	display: flex;
 	border-radius: 5px;
+	margin-bottom: 0.5rem;
+	background: var(--color-secondary);
 }
 
 .display-physical-books__header span {
@@ -106,6 +107,27 @@ button:active {
 	flex-basis: 20%;
 	display: flex;
 	justify-content: center;
+}
+
+.physical-books-row, .audio-books-row {
+	display: flex;
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	padding: 0 0.2rem;
+	background: var(--color-secondary);
+
+
+}
+
+.physical-books-row:nth-of-type(2n-1), .audio-books-row:nth-of-type(2n-1) {
+	background: var(--color-hover);
+}
+
+.physical-books-row span,  .audio-books-row span {
+	flex-basis: 20%;
+	display: flex;
+	justify-content: center;
+	padding: 0 0.5rem;
 }
 
 .display-audio-books {
