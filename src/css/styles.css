@@ -37,7 +37,7 @@ input, select {
 	margin-bottom: 1rem;
 	border: 1.5px solid var(--color-tercary);
 }
-
+	
 button {
 	background: var(--color-tercary);
 	height: 2rem;
@@ -48,6 +48,14 @@ button {
 	padding: 0 0.5rem;
 }
 
+button:hover {
+	background: var(--color-hover);
+}
+
+button:active {
+	background: var(--color-active);
+	color: black;
+}
 
 
 
